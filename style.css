@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F9F1E7;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.slider__item {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__div {
+  position: absolute;
+  bottom: 40px;
+  right: 140px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(31px);
+  padding: 24px;
+  z-index: 2;
+}
+
+.slick-slide img {
+  margin: 0 auto;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  background: none;
+  outline: none;
+  z-index: 1;
+  color: transparent;
+  font-size: 0;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+ul li button{
+  color: transparent;
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  background-color: #D8D8D8;
+}
+.slick-dots {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  list-style: none;
+  
+}
+.slick-active{
+
+}
+.slick-prev {
+  top: 25px;
+  right: 25px;
+  transform: rotate(-45deg);
+}
+
+.slick-next {
+  top: 25px;
+  right: 0;
+  transform: rotate(135deg);
+}
+
+.fixed__window {
+  position: absolute;
+  top: 45px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(31px);
+  z-index: 1;
+  width: 25%;
+  padding: 60px;
+}
+.fixed__title {
+  margin-bottom: 16px;
+}
+.fixed__description {
+  margin-bottom: 48px;
+}
+.fixed__a {
+  text-decoration: none;
+  color: #fff;
+  background: #E89F71;
+  padding: 24px 80px;
+}
+.slick-active button{
+  background-color: #E89F71;
+
+}
